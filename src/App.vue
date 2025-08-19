@@ -1,17 +1,30 @@
 <template>
-  <div>
-    <h1> Hello from ...</h1>
+  <div id="app">
+    <h1>🚀 My Vue App</h1>
 
-    <!-- Navigation Links -->
+    <!-- Navigation -->
     <nav>
-        <router-link to="/">HomePage</router-link>
-        <router-link to="/about">AboutPage</router-link>
-        <router-link to="/contact">ContactPage</router-link>
-        <router-link to="/users">UsersPage</router-link>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/contact">Contact</router-link> |
+      <router-link to="/users">Users</router-link>
     </nav>
 
-     <!-- Routed Components Render Here -->
+    <!-- Router Content -->
     <router-view />
+
+    <hr />
+
+    <!-- Vuex Counter -->
+    <NumCounter />
   </div>
 </template>
-  
+
+<script>
+import NumCounter from './components/NumCounter.vue'
+
+export default {
+  name: 'App',
+  components: { NumCounter }
+}
+</script>
