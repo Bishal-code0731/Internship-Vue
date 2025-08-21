@@ -1,30 +1,31 @@
+  <!--Third-Party Validation (VeeValidate + Yup)-->
+
 <template>
   <div id="app">
-    <h1>🚀 My Vue App</h1>
-
-    <!-- Navigation -->
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/contact">Contact</router-link> |
-      <router-link to="/users">Users</router-link>
-    </nav>
-
-    <!-- Router Content -->
-    <router-view />
-
-    <hr />
-
-    <!-- Vuex Counter -->
-    <NumCounter />
+    <!-- <AuthForm/>  -->
+    <!-- <MyLogin/>  -->
+   <!-- <MySignup/>   -->
+    <!-- <MyMySignup/>  -->
+     <!--  <LoginWithValidation/>  -->
+       <LoginSignup />
   </div>
-</template>
+  </template>
 
-<script>
-import NumCounter from './components/NumCounter.vue'
+  <script>
 
+// import AuthForm from "./components/AuthForm.vue";
+//import MyLogin from "./components/MyLogin.vue";
+// import MySignup from "./components/MySignup.vue";
+// import MyMySignup from "./components/MyMySignup.vue";
+// import LoginWithValidation from "./components/LoginWithValidation.vue";
+import LoginSignup from "./components/LoginSignup.vue";
 export default {
-  name: 'App',
-  components: { NumCounter }
+  components: // {AuthForm}
+                //{MyLogin}
+                //{MySignup}
+              //  {MyMySignup}
+              //  {LoginWithValidation}
+              { LoginSignup }
+
 }
 </script>
