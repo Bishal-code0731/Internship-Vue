@@ -1,31 +1,32 @@
-  <!--Third-Party Validation (VeeValidate + Yup)-->
+
 
 <template>
   <div id="app">
-    <!-- <AuthForm/>  -->
-    <!-- <MyLogin/>  -->
-   <!-- <MySignup/>   -->
-    <!-- <MyMySignup/>  -->
-     <!--  <LoginWithValidation/>  -->
-       <LoginSignup />
+    <h1>Axios Example in Vue</h1>
+  <!-- <MyPosts/>   -->
+   <!-- <MyMyPosts/>   -->
+   <!--- <YourPosts/>   -->
+    <PostList />
   </div>
-  </template>
+</template>
 
-  <script>
 
-// import AuthForm from "./components/AuthForm.vue";
-//import MyLogin from "./components/MyLogin.vue";
-// import MySignup from "./components/MySignup.vue";
-// import MyMySignup from "./components/MyMySignup.vue";
-// import LoginWithValidation from "./components/LoginWithValidation.vue";
-import LoginSignup from "./components/LoginSignup.vue";
+
+
+<script>
+//import MyPosts from "./components/MyPosts.vue";
+//import MyMyPosts from "./components/MyMyPosts.vue";
+//import YourPosts from "./components/YourPosts.vue";
+import PostList from './components/PostList.vue'
 export default {
-  components: // {AuthForm}
-                //{MyLogin}
-                //{MySignup}
-              //  {MyMySignup}
-              //  {LoginWithValidation}
-              { LoginSignup }
+  name: "App",
+  components: {
+    //MyPosts,
+    //MyMyPosts,
+    //YourPosts
+    PostList
 
+  }
 }
 </script>
+
